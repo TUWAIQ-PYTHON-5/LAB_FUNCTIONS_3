@@ -1,13 +1,16 @@
-def sentence (txtInput : str):
+def checekword(word:str):
 
-        for char in txtInput:
-            if (char.islower() == True):
-                print(char,end='')
-            else: 
-                print('',char.lower(),end='')
+    if type(word) != str:
+        return None
 
-        print()
+    temp:str=""
 
+    for char in word:
+        if char.isupper():
+            temp += " "+char.lower()
+        else:
+            temp+=char
 
-usrtxt : str = str(input("Input Your Text:"))
-sentence(usrtxt)
+    return temp        
+
+print(checekword("helloWorld"))
