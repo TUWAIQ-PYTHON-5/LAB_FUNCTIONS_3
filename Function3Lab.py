@@ -9,9 +9,9 @@
 Example: helloWorld --> hello world'''
 
 def sentence (txtInput : str):
-    if (type(txtInput) != type("Hello")):
-        print("Try again with text ")
-    else:
+    #if (type(txtInput) != type("Hello")):
+       # print("Try again with text ")
+    #else:
         #for txtInput in range(txtInput):
         for char in txtInput:
             if (char.islower() == True):
@@ -25,4 +25,5 @@ def sentence (txtInput : str):
 
 
 #print(type("hello"))
-sentence("helloWorld")
+usrtxt : str = str(input("Input Your Text:"))
+sentence(usrtxt)
