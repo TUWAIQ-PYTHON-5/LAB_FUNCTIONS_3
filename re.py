@@ -1,12 +1,13 @@
-'''
-# LAB_FUNCTIONS_3
 
-## write a function that takes a string as a parameter
-- first check that the type of the parameter is of type str
-- then, it should separates the word at any capital letter and replace it with a small letter 
-- and  should return the new modified string !
+'''def sentence (txtInput : str):
+    #if (type(txtInput) != type("Hello")):
+       # print("Try again with text ")
+    #else:
+        #for txtInput in range(txtInput):
+        for char in txtInput:
+            
 
-Example: helloWorld --> hello world'''
+        print()'''
 
 def reconstruct (char : str) -> str:
     if (char.islower() == True):
