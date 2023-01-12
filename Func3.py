@@ -1,15 +1,14 @@
 
 def checkWord(words : str):
-    words.split(',')
+    setatement = ""
     if type(words) != str : 
         print("input is Not a string")
          
-
     for letter  in words:
         if letter == letter.upper():
-            print("" , end=" ")
+             setatement += " "+letter 
+        else:
+            setatement += letter
+    return setatement.lower()
 
-        print(letter.lower(), end="")
-        
-
-checkWord("helloWorldFahadAlpha")
+print(checkWord("helloWorldFahadAlpha"))
