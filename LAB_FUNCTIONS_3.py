@@ -7,8 +7,8 @@
 
 def separate(word : str):
     result = ""
-    # if type(word) != str :
-    #     return None
+    if type(word) != str :
+        return "The input should be string "
     for char in word :      
         if char.isupper() :
             lower=char.lower()
