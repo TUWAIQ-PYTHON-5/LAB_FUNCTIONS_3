@@ -1,5 +1,5 @@
 def checkletters (hello:str):
-    if isinstance(hello,str):
+    if not isinstance(hello,str):
         return None
 
     temp:str = ""
