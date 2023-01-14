@@ -12,7 +12,7 @@ def myString(message):
                         result = result +" "+ letter2.lower()
                     else:
                         result = result + letter2
-                print(result)        
+                return result     
             else:
                 count = count + 1
                 continue
@@ -24,4 +24,5 @@ def myString(message):
         print("the message is not valid")
 
 message = input("Enter a message: ")
-myString(message)
+
+print(myString(message))
