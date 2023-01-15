@@ -15,7 +15,7 @@ def cutString(word : str):
         for i in word:
             if i.isupper():
                 
-                strName += f'{i.lower()} '
+                strName += f' {i.lower()}'
                  
             elif i.islower():
                 strName += i
