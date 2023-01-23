@@ -1,14 +1,14 @@
-from operator import index
+#from operator import index
 def some_words (aword : str):
     if not (type(aword) == str):
         return None
-    temp: str=" "
+    temp: str=""
     for char in aword:
        if char.isupper():
         temp += " " + char.lower()
-    else:
+       else:
         temp += char
-        return temp
+    return temp
 
 
 
